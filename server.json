@@ -1,0 +1,286 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+    ,
+    {
+      "id": 7,
+      "amount": 10
+    }
+    ,
+    {
+      "id": 8,
+      "amount": 10
+    }
+    ,
+    {
+      "id": 9,
+      "amount": 10
+    }
+    ,
+    {
+      "id": 10,
+      "amount": 10
+    }
+    ,
+    {
+      "id": 11,
+      "amount": 10
+    },
+    {
+      "id": 12,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Sanji Action figure",
+      "price": 199.99,
+      "image": "https://www.pngkey.com/png/full/581-5814553_anime-one-piece-figure-sanji-action-figure-figuarts.png"
+    },
+    {
+      "id": 2,
+      "title": "Levi Action Figure",
+      "price": 199.99,
+      "image": "https://w7.pngwing.com/pngs/474/511/png-transparent-figurine-attack-on-titan-model-figure-action-toy-figures-anime-anime-comics-retail-cartoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Queen's Blade Action Figure",
+      "price": 199.99,
+      "image": "https://e7.pngegg.com/pngimages/356/1004/png-clipart-queen-s-blade-fate-stay-night-model-figure-action-toy-figures-figurine-anime.png"
+    },
+    {
+      "id": 4,
+      "title": "Ace Action Figure",
+      "price": 199.99,
+      "image": "https://static3.tcdn.com.br/img/img_prod/460977/estatua_portgas_d_ace_one_piece_escala_1_6_anime_manga_evali_89615_1_7d61182289d422c5ea7d7c484ccf849d.png"
+    },
+    {
+      "id": 5,
+      "title": "Saiki Kusuo Vol.1",
+      "price": 29.99,
+      "image": "https://cf.shopee.com.br/file/4ef62778f9d635799cce8ca4391bb398"
+    },
+    {
+      "id": 6,
+      "title": "Naruto Gold Vol.1",
+      "price": 29.99,
+      "image": "https://images-americanas.b2w.io/produtos/123673221/imagens/livro-naruto-gold-vol-1/123673221_1_large.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Jujutsu Kaisen Vol.8",
+      "price": 29.99,
+      "image": "https://cf.shopee.com.br/file/5ac1e6ecda7fd7e1f8abf76a86e39430"
+    },
+    {
+      "id": 8,
+      "title": "Black Clover Vol.1",
+      "price": 29.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91WgpA0pjOL.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Hashi Jedi",
+      "price": 59.99,
+      "image": "https://i.pinimg.com/originals/73/f6/c1/73f6c1b2bfbb255c6b4ce0573334b2c5.png"
+    },
+    {
+      "id": 10,
+      "title": "Mouse Pad Rick and Morty",
+      "price": 79.99,
+      "image": "https://m.media-amazon.com/images/I/81Z0bF3mASS._AC_SL1500_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Colar Chave do porão",
+      "price": 29.99,
+      "image": "https://cdn.shopify.com/s/files/1/0554/7615/8554/products/Colares_be563178-49f4-4e04-88c9-447f66e26fde.png?v=1641664654"
+    },
+    {
+      "id": 12,
+      "title": "Capinhas Komi-san",
+      "price": 19.99,
+      "image": "https://ae01.alicdn.com/kf/Ha646a34e12bf4246ac0f17ee20e66e06Q/Mang-chibi-komi-shouko-komi-san-caso-de-telefone-para-redmi-nota-5-7-8-9.jpg_Q90.jpg_.webp"
+    }
+  ],
+  "best-products": [
+    {
+      "id": 1,
+      "title": "Sanji Action figure",
+      "price": 199.99,
+      "image": "https://www.pngkey.com/png/full/581-5814553_anime-one-piece-figure-sanji-action-figure-figuarts.png"
+    },
+    {
+      "id": 2,
+      "title": "Levi Action Figure",
+      "price": 199.99,
+      "image": "https://w7.pngwing.com/pngs/474/511/png-transparent-figurine-attack-on-titan-model-figure-action-toy-figures-anime-anime-comics-retail-cartoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Queen's Blade Action Figure",
+      "price": 199.99,
+      "image": "https://e7.pngegg.com/pngimages/356/1004/png-clipart-queen-s-blade-fate-stay-night-model-figure-action-toy-figures-figurine-anime.png"
+    },
+    {
+      "id": 4,
+      "title": "Ace Action Figure",
+      "price": 199.99,
+      "image": "https://static3.tcdn.com.br/img/img_prod/460977/estatua_portgas_d_ace_one_piece_escala_1_6_anime_manga_evali_89615_1_7d61182289d422c5ea7d7c484ccf849d.png"
+    },
+    {
+      "id": 9,
+      "title": "Hashi Jedi",
+      "price": 59.99,
+      "image": "https://i.pinimg.com/originals/73/f6/c1/73f6c1b2bfbb255c6b4ce0573334b2c5.png"
+    },
+    {
+      "id": 10,
+      "title": "Mouse Pad Rick and Morty",
+      "price": 79.99,
+      "image": "https://m.media-amazon.com/images/I/81Z0bF3mASS._AC_SL1500_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Colar Chave do porão",
+      "price": 29.99,
+      "image": "https://cdn.shopify.com/s/files/1/0554/7615/8554/products/Colares_be563178-49f4-4e04-88c9-447f66e26fde.png?v=1641664654"
+    },
+    {
+      "id": 12,
+      "title": "Capinhas Komi-san",
+      "price": 19.99,
+      "image": "https://ae01.alicdn.com/kf/Ha646a34e12bf4246ac0f17ee20e66e06Q/Mang-chibi-komi-shouko-komi-san-caso-de-telefone-para-redmi-nota-5-7-8-9.jpg_Q90.jpg_.webp"
+    }
+  ],
+  "action-figure-products": [
+    {
+      "id": 1,
+      "title": "Sanji Action figure",
+      "price": 199.99,
+      "image": "https://www.pngkey.com/png/full/581-5814553_anime-one-piece-figure-sanji-action-figure-figuarts.png"
+    },
+    {
+      "id": 2,
+      "title": "Levi Action Figure",
+      "price": 199.99,
+      "image": "https://w7.pngwing.com/pngs/474/511/png-transparent-figurine-attack-on-titan-model-figure-action-toy-figures-anime-anime-comics-retail-cartoon.png"
+    },
+    {
+      "id": 3,
+      "title": "Queen's Blade Action Figure",
+      "price": 199.99,
+      "image": "https://e7.pngegg.com/pngimages/356/1004/png-clipart-queen-s-blade-fate-stay-night-model-figure-action-toy-figures-figurine-anime.png"
+    },
+    {
+      "id": 4,
+      "title": "Ace Action Figure",
+      "price": 199.99,
+      "image": "https://static3.tcdn.com.br/img/img_prod/460977/estatua_portgas_d_ace_one_piece_escala_1_6_anime_manga_evali_89615_1_7d61182289d422c5ea7d7c484ccf849d.png"
+    }
+  ],
+  "manga-products": [
+    {
+      "id": 5,
+      "title": "Saiki Kusuo Vol.1",
+      "price": 29.99,
+      "image": "https://cf.shopee.com.br/file/4ef62778f9d635799cce8ca4391bb398"
+    },
+    {
+      "id": 6,
+      "title": "Naruto Gold Vol.1",
+      "price": 29.99,
+      "image": "https://images-americanas.b2w.io/produtos/123673221/imagens/livro-naruto-gold-vol-1/123673221_1_large.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Jujutsu Kaisen Vol.8",
+      "price": 29.99,
+      "image": "https://cf.shopee.com.br/file/5ac1e6ecda7fd7e1f8abf76a86e39430"
+    },
+    {
+      "id": 8,
+      "title": "Black Clover Vol.1",
+      "price": 29.99,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91WgpA0pjOL.jpg"
+    }
+  ],
+  "accessories-products": [
+    {
+      "id": 9,
+      "title": "Hashi Jedi",
+      "price": 59.99,
+      "image": "https://i.pinimg.com/originals/73/f6/c1/73f6c1b2bfbb255c6b4ce0573334b2c5.png"
+    },
+    {
+      "id": 10,
+      "title": "Mouse Pad Rick and Morty",
+      "price": 79.99,
+      "image": "https://m.media-amazon.com/images/I/81Z0bF3mASS._AC_SL1500_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Colar Chave do porão",
+      "price": 29.99,
+      "image": "https://cdn.shopify.com/s/files/1/0554/7615/8554/products/Colares_be563178-49f4-4e04-88c9-447f66e26fde.png?v=1641664654"
+    },
+    {
+      "id": 12,
+      "title": "Capinhas Komi-san",
+      "price": 19.99,
+      "image": "https://ae01.alicdn.com/kf/Ha646a34e12bf4246ac0f17ee20e66e06Q/Mang-chibi-komi-shouko-komi-san-caso-de-telefone-para-redmi-nota-5-7-8-9.jpg_Q90.jpg_.webp"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "title": "Banner Promocional",
+      "link": "bannerspage",
+      "image": "https://cdnstatic8.com/brasilnaweb.com.br/wp-content/uploads/2017/06/blueprint-banner-padrao-loja-compress.png"
+    },
+    {
+      "id": 2,
+      "title": "Banner Promocional",
+      "link": "bannerspage",
+      "image": "https://img.freepik.com/vetores-gratis/modelo-de-banner-de-site-moderno-com-formas-abstratas_1361-3311.jpg?w=2000"
+    },
+    {
+      "id": 3,
+      "title": "Banner Promocional",
+      "link": "bannerspage",
+      "image": "https://cdnstatic8.com/brasilnaweb.com.br/wp-content/uploads/2017/06/blueprint-banner-padrao-loja-compress.png"
+    },
+    {
+      "id": 4,
+      "title": "Banner Promocional",
+      "link": "bannerspage",
+      "image": "https://cdnstatic8.com/brasilnaweb.com.br/wp-content/uploads/2017/06/blueprint-banner-padrao-loja-compress.png"
+    }
+    
+  ]
+}
