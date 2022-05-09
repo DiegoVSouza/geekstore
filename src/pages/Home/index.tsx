@@ -63,7 +63,7 @@ const Home = (): JSX.Element => {
 
     setIdx(idx+1)
 
-    const {data:banners} = await api.get('banners')
+    const {data:banners} = await api.get('banners') 
     const point = document.querySelectorAll('.points li')
 
     if(idx>banners.length -2){setIdx(0); point[0].classList.add('on')}

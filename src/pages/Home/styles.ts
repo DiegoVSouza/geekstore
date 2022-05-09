@@ -6,7 +6,7 @@ export const Container = styled.main`
 export const ProductList = styled.ul`
   padding: 2rem 4rem;
   overflow-x: hidden;
-  position: relative;
+  position: relative; 
   
   
 
