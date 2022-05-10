@@ -92,9 +92,9 @@ export const Nav = styled.ul`
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
     margin: auto;
-    padding: 0.3rem 0.3rem;
+    padding: 0.3rem;
     background: ${lighten(0.1, '#E9EAE9')};
     border-radius: 10px;
   }

@@ -3,122 +3,111 @@ import { darken } from 'polished';
 export const Container = styled.main`
 
 `
+
 export const ProductList = styled.ul`
-  padding: 2rem 4rem;
-  overflow-x: hidden;
-  position: relative; 
-  
+padding: 0 4rem 2rem;
+overflow-x: hidden;
+position: relative; 
+
+
+section{
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  transition: all 200ms;
   
 
-  h2{
-    color: var(--white)
+  li {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+
+  & + li{
+    margin-left: 1rem;
   }
 
-  .products{
-      display: flex;
-      align-items: center;
-      position: absolute;
-      transform: translateY(-50%);
-      top: 10%;
-      vertical-align: center;
-      cursor: pointer;
-      
-      
-     
-      svg{
-        
-      }
-      
-      &.left{
-        right: 10%;
+  div {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    position: absolute;
+    bottom: 12.5%;
+    right: 10%; 
+    vertical-aling: center;
 
-        
-      }
 
-      &.right{
-        right: 5%;
-      }
+
+    svg {
+      margin-right: 5px;
 
     }
+  }
 
-  
-  section{
+  img {
+    align-self: center;
+    width: 250px;
+    height:250px;
+  }
 
-    position: relative;
+  > strong {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    margin-top: 1rem;
+  }
+
+  > span {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0.5rem 0 1rem;
+  }
+
+  button {
+    background: var(--blue);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: auto;
+    height: 2rem ;
+
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-top: 2rem;
-    width: 100%;
-    transition: all 200ms;
+    align-items: center;
+    transition: background 0.2s;
+
+    &:hover {
+      background: ${darken(0.06, '#148695')};
+    }
     
-
-    li {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 0.5rem;
-    padding: 1rem;
-
-    & + li{
-      margin-left: 1rem;
-    }
-
-    img {
-      align-self: center;
-      width: 250px;
-      height:250px;
-    }
-
-    > strong {
-      font-size: 16px;
-      line-height: 20px;
-      color: #333;
-      margin-top: 1rem;
-    }
-
-    > span {
-      font-size: 21px;
+    span {
+      flex: 1;
+      text-align: center;
       font-weight: bold;
-      margin: 0.5rem 0 1rem;
-    }
-
-    button {
-      background: var(--blue);
-      color: #fff;
-      border: 0;
-      border-radius: 4px;
-      overflow: hidden;
-      margin-top: auto;
-
-      display: flex;
-      align-items: center;
-      transition: background 0.2s;
-
-      &:hover {
-        background: ${darken(0.06, '#148695')};
-      }
-
-      >div {
-        display: flex;
-        align-items: center;
-        padding: 12px;
-        background: rgba(0, 0, 0, 0.1);
-
-        svg {
-          margin-right: 5px;
-        }
-      }
-
-      span {
-        flex: 1;
-        text-align: center;
-        font-weight: bold;
-      }
     }
   }
 }
-  
+}
+`
+export const Nav = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 4rem 2rem;
+
+  h2{
+    color: var(--white);
+  }
+
+  div{
+    display: flex;
+
+  }
+    
 `;
 
 

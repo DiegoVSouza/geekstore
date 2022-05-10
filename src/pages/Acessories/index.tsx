@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
+
 import { IoBagAdd } from "react-icons/io5";
+import { Container } from "./styles";
+import {GlobalProduct} from'../../styles/global'
+
 import { useCart } from "../../hooks/useCart";
 import { api } from "../../services/api";
-import { Container, ProductList } from "./styles";
+
 
 
 interface Product {
@@ -47,28 +51,30 @@ const Acessories = (): JSX.Element =>{
     return(
 
         <Container>
-            <h2>Melhores Action Figures</h2>
-            <ProductList>
+            <h2>Melhores Acessorios</h2>
+            <GlobalProduct>
                 {accessoriesProducts.map( product =>(
-                    <li key={product.id}>
+                  <li key={product.id}>
                     <img src={product.image} alt={product.title} />
                     <strong>{product.title}</strong>
                     <span>{product.price}</span>
+
+                    <div data-testid="cart-product-quantity">
+                        <IoBagAdd size={24} color="#000" />
+                        {cartItemsAmount[product.id] || 0}
+                      </div>
+
                     <button
                       type="button"
                       data-testid="add-product-button"
                       onClick={() => handleAddProduct(product.id)}
                     >
-                      <div data-testid="cart-product-quantity">
-                        <IoBagAdd size={16} color="#FFF" />
-                        {cartItemsAmount[product.id] || 0}
-                      </div>
-          
+
                       <span>Adicionar Produto ao carrinho</span>
                     </button>
                   </li>
                 ))}
-            </ProductList>
+            </GlobalProduct>
         </Container>
 
         );
