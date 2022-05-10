@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-import { BannersContainer, Container, ProductList, Slide } from './styles';
-import { api } from '../../services/api';
-
-import { useCart } from '../../hooks/useCart';
 import { IoArrowBackCircle, IoArrowForwardCircle, IoBagAdd, IoCaretBackOutline, IoCaretForwardOutline } from 'react-icons/io5';
+import { BannersContainer, Container, Nav, ProductList , Slide } from './styles';
+
+import { api } from '../../services/api';
+import { useCart } from '../../hooks/useCart';
+
 import { Link } from 'react-router-dom';
 
 
@@ -151,40 +152,45 @@ const Home = (): JSX.Element => {
 
         </BannersContainer>
 
-    
+    <Nav>
+      <h2>Mais Comprados</h2>
+      <div>
+        <div className='products left' onClick={()=>handleProductLeft()}>
+              <IoCaretBackOutline size={32} color="#ffffff" />
+        </div>
+
+        <div className='products right' onClick={()=>handleProductRight()}>
+              <IoCaretForwardOutline size={32} color="#ffffff" />
+        </div>
+      </div>
+      
+    </Nav>
     <ProductList>
-    <h2>Mais Comprados</h2>
     <section>
       {bestProducts.map( product =>(
         <li key={product.id} style={sliderStyleProduct}>
           <img src={product.image} alt={product.title} />
           <strong>{product.title}</strong>
           <span>{product.price}</span>
+
+          <div data-testid="cart-product-quantity">
+              <IoBagAdd size={24} color="#000" />
+              {cartItemsAmount[product.id] || 0}
+            </div>
+
           <button
             type="button"
             data-testid="add-product-button"
             onClick={() => handleAddProduct(product.id)}
           >
-            <div data-testid="cart-product-quantity">
-              <IoBagAdd size={16} color="#FFF" />
-              {cartItemsAmount[product.id] || 0}
-            </div>
-
             <span>Adicionar Produto ao carrinho</span>
           </button>
         </li>
         ))}
 
         </section>
-        
-        <div className='products right' onClick={()=>handleProductRight()}>
-          <IoCaretForwardOutline size={32} color="#ffffff" />
-        </div>
-        <div className='products left' onClick={()=>handleProductLeft()}>
-          <IoCaretBackOutline size={32} color="#ffffff" />
-        </div>
-        
       </ProductList>
+
     </Container>
   );
 };
