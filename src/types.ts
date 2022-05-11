@@ -17,3 +17,9 @@ export interface Banner{
   link: string;
   image: string;
 }
+
+export interface Account{
+  id: number;
+  email: string;
+  password: string;
+}

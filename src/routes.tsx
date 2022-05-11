@@ -5,6 +5,7 @@ import Cart from './pages/Cart';
 import ActionFigures from './pages/ActionFigures';
 import Manga from './pages/Manga';
 import Acessories from './pages/Acessories';
+import CreateAccount from './pages/CreateAccount';
 
 const Routes = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const Routes = (): JSX.Element => {
       <Route path="/actionfigures" component={ActionFigures}/>
       <Route path="/manga" component={Manga}/>
       <Route path="/accessories" component={Acessories}/>
+      <Route path="/createaccount" component={CreateAccount}/>
     </Switch>
   );
 };
