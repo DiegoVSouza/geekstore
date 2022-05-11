@@ -282,61 +282,6 @@
       "id": 1,
       "email": "emailqualquer@gmail.com",
       "password": "123456789"
-    },
-    {
-      "id": 2,
-      "email": "email123teste@gadasd",
-      "password": "dasdasdasddasdaad"
-    },
-    {
-      "id": 3,
-      "email": "dasdasd@sdawdas",
-      "password": "adasdasdas"
-    },
-    {
-      "id": 4,
-      "email": "dsda@dasdawd",
-      "password": "dsadsada"
-    },
-    {
-      "id": 630531514913,
-      "email": "dasdas@dasdaswdas",
-      "password": "dasdas"
-    },
-    {
-      "id": 1176676179178,
-      "email": "dsadaw@etrdtrd",
-      "password": "dasdasd"
-    },
-    {
-      "id": 1176676179179,
-      "email": "dsad@dasdaw",
-      "password": "adasdasd"
-    },
-    {
-      "id": 1421109821568,
-      "email": "dsadas@dasdwad",
-      "password": "sdawdaws"
-    },
-    {
-      "id": 1421109821569,
-      "email": "dasdas@dasdasd",
-      "password": "dsadasdasd"
-    },
-    {
-      "id": 37107522282,
-      "email": "sdassdsafsdf@dsasddddd",
-      "password": "sdasdasd"
-    },
-    {
-      "id": 1421109821570,
-      "email": "dddadad@dasdsadsa",
-      "password": "asdasdasd"
-    },
-    {
-      "id": 1256379809336,
-      "email": "esfsdf@sdaesy",
-      "password": "asdsydut"
     }
   ]
 }
