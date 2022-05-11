@@ -26,7 +26,7 @@ const CreateAccount = (): JSX.Element=>{
         const newId = Math.round(Date.now()*Math.random())
         setId(newId)
         try{
-            const {data:accounts} = await api.get<Account[]>('accounts')
+            const {data:accounts} = await api.get<Account[]>('accounts') 
 
             const existEmail = accounts.find(account=> account.email === email)
 
