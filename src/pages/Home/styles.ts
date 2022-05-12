@@ -39,7 +39,6 @@ section{
     position: absolute;
     bottom: 12.5%;
     right: 10%; 
-    vertical-aling: center;
 
 
 
@@ -105,6 +104,7 @@ export const Nav = styled.div`
 
   div{
     display: flex;
+    cursor: pointer;
 
   }
     
