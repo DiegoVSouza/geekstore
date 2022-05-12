@@ -1,30 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IoBagHandle, IoPersonCircle } from 'react-icons/io5';
+import { IoBagHandle, IoImagesSharp, IoPersonCircle } from 'react-icons/io5';
 
 
 import logo from '../../assets/images/logo.svg';
 import { Container, Cart, Nav } from './styles';
 import { useCart } from '../../hooks/useCart';
+import { useLogin } from '../../hooks/useLogin';
 
 const Header = (): JSX.Element => {
   const {cart} = useCart()
+  const { isLogged, userName } = useLogin()
   const cartSize = cart.length
 
-  return (
-    <Container>
+  function Guest(){
+    return(
       <div className='account'>
-        
-        <Link to='/signin'>
+        <Link to='/login'>
           <IoPersonCircle size={36} color='#101010'/>
         </Link>
         <div>
-          <Link to='/signin'><strong>Entrar</strong></Link>
+          <Link to='/login'><strong>Entrar</strong></Link>
           <Link to='/createaccount'><label>Criar Conta</label></Link>
         </div>
+      </div>
+    )
+  }
+  function User(){
+    return(
+      <div className='account'>
+          <IoImagesSharp size={36} color='#101010'/>
+
+        <div>
+          <strong>Bem vindo {userName}</strong>
         </div>
-        
-        
+      </div>
+    )
+  }
+
+  function Account(){
+    if(!isLogged){
+      return <Guest/>
+    }
+      
+    return <User/>
+  }
+
+  return (
+    <Container>
+
+      {Account()}
+
       <Link to="/">
         <div className='home'>
           <strong>Geek Store</strong>

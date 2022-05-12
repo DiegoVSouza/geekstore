@@ -17,7 +17,7 @@ export default createGlobalStyle`
     --green: #43BA88;
     --ligth-background: #E9EAE9;
     --black: #101010;
-    --white: #e7e7e7;
+    --white: #fff8f8;
     --blue: #148695;
   }
 

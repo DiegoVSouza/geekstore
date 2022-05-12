@@ -6,16 +6,19 @@ import Routes from './routes';
 import GlobalStyles from './styles/global';
 import Header from './components/Header';
 import { CartProvider } from './hooks/useCart';
+import { LoginProvider } from './hooks/useLogin';
 
 const App = (): JSX.Element => {
   return (
     <BrowserRouter>
-      <CartProvider>
-        <GlobalStyles />
-        <Header />
-        <Routes />
-        <ToastContainer autoClose={3000} />
-      </CartProvider>
+    <LoginProvider>
+        <CartProvider>
+          <GlobalStyles />
+          <Header />
+          <Routes />
+          <ToastContainer autoClose={3000} />
+        </CartProvider>
+      </LoginProvider>
     </BrowserRouter>
   );
 };

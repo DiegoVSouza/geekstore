@@ -6,6 +6,7 @@ import ActionFigures from './pages/ActionFigures';
 import Manga from './pages/Manga';
 import Acessories from './pages/Acessories';
 import CreateAccount from './pages/CreateAccount';
+import LoginPage from './pages/LoginPage';
 
 const Routes = (): JSX.Element => {
   return (
@@ -16,6 +17,7 @@ const Routes = (): JSX.Element => {
       <Route path="/manga" component={Manga}/>
       <Route path="/accessories" component={Acessories}/>
       <Route path="/createaccount" component={CreateAccount}/>
+      <Route path="/login" component={LoginPage}/>
     </Switch>
   );
 };

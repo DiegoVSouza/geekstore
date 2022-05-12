@@ -155,11 +155,11 @@ const Home = (): JSX.Element => {
     <Nav>
       <h2>Mais Comprados</h2>
       <div>
-        <div className='products left' onClick={()=>handleProductLeft()}>
+        <div onClick={()=>handleProductLeft()}>
               <IoCaretBackOutline size={32} color="#ffffff" />
         </div>
 
-        <div className='products right' onClick={()=>handleProductRight()}>
+        <div onClick={()=>handleProductRight()}>
               <IoCaretForwardOutline size={32} color="#ffffff" />
         </div>
       </div>
