@@ -67,12 +67,18 @@ const Home = (): JSX.Element => {
   async function handleBannerRight(){
 
     setIdx(idx+1)
+    const {data:banners} = await api.get('banners')
+
+      if(idx>banners.length -2){setIdx(0)}
 
   }
 
   async function handleBannerLeft(){
 
     setIdx(idx-1)
+    const {data:banners} = await api.get('banners')
+    
+    if(idx<=0){setIdx(banners.length-1)}
  
   }
 
