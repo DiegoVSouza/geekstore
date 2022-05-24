@@ -11,7 +11,7 @@ position: relative;
 
 
 section{
-
+  scroll-behavior: auto;
   position: relative;
   display: flex;
   justify-content: space-between;

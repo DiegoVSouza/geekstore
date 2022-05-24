@@ -6,6 +6,7 @@ import {GlobalProduct} from'../../styles/global'
 
 import { useCart } from "../../hooks/useCart";
 import { api } from "../../services/api";
+import { formatPrice } from "../../util/format";
 
 
 
@@ -31,8 +32,11 @@ const ActionFigures = (): JSX.Element =>{
     const {addProduct, cart} = useCart()
     useEffect(()=>{
         async function loadProducts(){
-            const products = await api.get('action-figure-products')
-            setActionFiguresProducts(products.data)
+            const {data:products} = await api.get('action-figure-products')
+            const productFormatted = products.map(function (product: Product) {
+              return { ...product, price: formatPrice(product.price) }
+            })
+            setActionFiguresProducts(productFormatted)
         }
 
         loadProducts()

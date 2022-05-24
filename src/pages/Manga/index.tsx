@@ -4,6 +4,7 @@ import { useCart } from "../../hooks/useCart";
 import { api } from "../../services/api";
 import { Container, ProductList } from "./styles";
 import {GlobalProduct} from'../../styles/global'
+import { formatPrice } from "../../util/format";
 
 
 interface Product {
@@ -28,8 +29,11 @@ const Manga = (): JSX.Element =>{
     const {addProduct, cart} = useCart()
     useEffect(()=>{
         async function loadProducts(){
-            const products = await api.get('manga-products')
-            setMangaProducts(products.data)
+            const {data:products} = await api.get('manga-products')
+            const productFormatted = products.map(function (product: Product) {
+              return { ...product, price: formatPrice(product.price) }
+            })
+            setMangaProducts(productFormatted)
         }
 
         loadProducts()

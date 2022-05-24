@@ -7,6 +7,7 @@ import { api } from '../../services/api';
 import { useCart } from '../../hooks/useCart';
 
 import { Link } from 'react-router-dom';
+import { formatPrice } from '../../util/format';
 
 
 interface Product {
@@ -44,12 +45,15 @@ const Home = (): JSX.Element => {
 
   useEffect(() => {
     async function loadProducts() {
-      const bestProducts = await api.get('best-products')
-      setbestProducts(bestProducts.data) 
+      const {data:bestProducts} = await api.get('best-products')
+      const productFormatted = bestProducts.map(function (product: Product) {
+        return { ...product, price: formatPrice(product.price) }
+      })
+      setbestProducts(productFormatted) 
+
       const banners = await api.get('banners')
+      
       setBanners(banners.data)
-      const point = document.querySelectorAll('.points li')
-      point[idx].classList.add('on')
     }
 
     loadProducts();
@@ -64,27 +68,12 @@ const Home = (): JSX.Element => {
 
     setIdx(idx+1)
 
-    const {data:banners} = await api.get('banners') 
-    const point = document.querySelectorAll('.points li')
-
-    if(idx>banners.length -2){setIdx(0); point[0].classList.add('on')}
-    
-    point[idx].classList.remove('on')
-    point[idx+1].classList.add('on')
   }
 
   async function handleBannerLeft(){
 
     setIdx(idx-1)
-
-    const {data:banners} = await api.get('banners')
-    const point = document.querySelectorAll('.points li')
-
-    if(idx<=0){setIdx(banners.length-1); point[banners.length-1].classList.add('on')}
-
-    point[idx].classList.remove('on')
-    point[idx-1].classList.add('on')
-    
+ 
   }
 
   async function handleProductRight(){
@@ -144,11 +133,6 @@ const Home = (): JSX.Element => {
               <IoArrowBackCircle size={64} color="#FFF" />
             </div>
             
-            <ul className='points'>
-                {banners.map(point=>(
-                  <li key={point.id}></li>
-                ))}
-            </ul>
 
         </BannersContainer>
 
